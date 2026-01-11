@@ -1,0 +1,71 @@
+.client {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 90px;
+    background: rgb(242, 250, 243);
+    gap: 30px;
+}
+
+/* Title */
+.client h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Card */
+.client-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 1300px; /* chekka tomonga chiqmasligi uchun */
+    text-align: center;
+    
+}
+
+/* P matni qo'shtirnoq va yashil */
+.client-card p {
+    font-size: 40px;
+    line-height: 1.2;
+    color: #1ec28b;
+}
+
+.client-card p span {
+    font-size: 20px;
+    color: #494747;
+}
+
+/* Rasm */
+/* Client info (rasm + yozuvlar) */
+.client-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Rasm */
+.client-info img {
+    
+    
+    object-fit: cover;
+    
+}
+
+/* Yozuvlar (ustma-ust) */
+.client-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.client-text h4 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.client-text span {
+    font-size: 16px;
+    color: #777;
+}

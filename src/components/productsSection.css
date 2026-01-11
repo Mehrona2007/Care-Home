@@ -1,0 +1,263 @@
+.pricing {
+  padding: 80px 90px;
+  text-align: center;
+  background: #fff;
+}
+
+.pricing h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+/* Toggle */
+.toggle {
+  display: inline-flex;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.toggle button {
+  padding: 12px 25px;
+  border: none;
+  background: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.toggle button span {
+  background: #ffe08a;
+  padding: 2px 8px;
+  margin-left: 6px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.toggle .active {
+  background: black;
+  color: white;
+}
+
+
+/* Cards */
+.pricing-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 320px;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  padding: 35px 25px;
+  text-align: left;
+  background: white;
+  transition: all 0.35s ease;
+}
+
+.card:hover {
+  background: linear-gradient(180deg, #2e7d32, #66bb6a);
+  color: white;
+  transform: translateY(-12px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover p,
+.card:hover small,
+.card:hover ul li {
+  color: #e0e0e0;
+}
+
+.card:hover .btn.dark {
+  background: #ffe08a;
+  color: black;
+}
+
+.card:hover .btn.light {
+  background: black;
+  color: white;
+}
+
+
+.card h2 {
+  font-size: 42px;
+  margin: 20px 0 10px;
+}
+
+.card p {
+  color: gray;
+  margin-bottom: 25px;
+}
+
+.label {
+  font-size: 14px;
+  background: #f1f1f1;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.card ul li {
+  margin-bottom: 12px;
+}
+
+.card ul .no {
+  color: red;
+}
+
+/* Buttons */
+.btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn.dark {
+  background: black;
+  color: white;
+}
+
+.btn.light {
+  background: #ffd27d;
+  color: black;
+}
+
+.card small {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: gray;
+}
+
+/* Popular */
+.popular {
+  background: linear-gradient(180deg, #2e7d32, #66bb6a);
+  color: white;
+}
+
+.popular p,
+.popular small {
+  color: #e0e0e0;
+}
+
+.badge {
+  background: #ffd54f;
+  color: black;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: #e0e0e0;
+  margin: 25px 0;
+}
+
+.card:hover .line {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .pricing {
+    padding: 60px 40px;
+  }
+
+  .pricing h1 {
+    font-size: 32px;
+  }
+
+  .pricing-cards {
+    gap: 25px;
+  }
+
+  .card {
+    width: 300px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .pricing {
+    padding: 50px 25px;
+  }
+
+  .pricing h1 {
+    font-size: 28px;
+  }
+
+  .toggle {
+    margin-bottom: 35px;
+  }
+
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 420px;
+  }
+}
+
+
+
+
+@media (max-width: 480px) {
+  .pricing {
+    padding: 40px 16px;
+  }
+
+  .pricing h1 {
+    font-size: 24px;
+  }
+
+  .toggle {
+    width: 100%;
+  }
+
+  .toggle button {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .card {
+    padding: 25px 18px;
+  }
+
+  .card h2 {
+    font-size: 32px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .card ul li {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+}

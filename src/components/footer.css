@@ -1,0 +1,102 @@
+.footer{
+  background-color: rgb(242, 250, 243);
+  color: #000;
+  padding: 60px 80px 20px;
+}
+
+.footer-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+/* Chap tomon */
+.footer-left{
+  flex: 1;
+}
+
+/* O‘ng tomon */
+.footer-right{
+  display: flex;
+  gap: 60px;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.footer-col{
+  flex:1;
+  min-width: 220px;
+}
+
+.footer-col h1,
+.footer-col h1{
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.footer-col p{
+  font-size: 18px;
+  line-height: 1.6;
+  color: #646262;
+  line-height: 1.6;
+}
+
+.footer-icon{
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  gap: 20px;
+
+}
+
+.footer-icon svg:hover{
+  
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(7, 230, 107, 0.35);
+}
+
+.footer-icon svg{
+   overflow: hidden;
+  transition: all 0.33s ease;
+}
+
+.footer-col ul{
+  list-style: none;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.footer-col ul li{
+  margin-bottom: 8px;
+  cursor: pointer;
+  color: #626161;
+}
+
+.footer-col ul li:hover{
+  color: #2b2a2a;
+}
+
+.footer-bottom{
+  border-top: 1px solid #333;
+  margin-top: 40px;
+  padding-top: 15px;
+  text-align: center;
+  color: #4e4c4c;
+}
+
+@media (max-width:768px) {
+  .footer{
+    padding: 40px 20px;
+  }
+
+  .footer-top{
+    flex-direction: column;
+  }
+  
+  .footer-right{
+    flex-direction: column;
+  }
+}
+
+

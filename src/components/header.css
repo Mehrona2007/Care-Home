@@ -1,0 +1,20 @@
+.header {
+  width: 100%;
+  min-height: 90vh;        /* ENG MUHIM QISM */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .header {
+    min-height: 45vh;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .header {
+    min-height: 35vh;
+  }
+}

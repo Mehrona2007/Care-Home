@@ -1,0 +1,57 @@
+.meadicare{
+    padding: 10px 95px;
+    
+}
+
+.meadicare-t{
+    text-align: center;
+    width: 1300px;
+    padding: 10px;
+    height: 250px;
+   
+}
+
+.meadicare-t h1{
+    text-align: center;
+    font-size: 45px;
+}
+
+.meadicare-t p{
+    text-align: center;
+    font-size: 18px;
+    color: gray;
+    line-height: 1.4;
+}
+
+
+
+
+/* Mobile uchun */
+@media screen and (max-width: 768px) {
+  .meadicare {
+    padding: 10px 2%;
+  }
+  
+  .meadicare-t {
+    max-width: 95%;
+    padding: 15px 10px;
+    min-height: 600px;
+  }
+  
+  .meadicare-t h1 {
+    font-size: 35px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}
+
+/* Kichik mobile uchun */
+@media screen and (max-width: 480px) {
+  .meadicare {
+    padding: 5px 2%;
+  }
+  
+  .meadicare-t {
+    padding: 10px;
+  }
+}

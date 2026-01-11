@@ -1,0 +1,112 @@
+/* CONTAINER */
+.cares3{
+    padding: 30px 20px; /* kichik ekran uchun kichikroq padding */
+    display: flex;
+    justify-content: center;
+}
+
+/* CARD */
+.card3{
+    padding: 0 80px;
+    background: rgb(68, 171, 79);
+    color: white;
+    max-width: 1320px;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card3:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* TITLE */
+.card3 h1{
+    
+    margin: 0;
+    font-size: 40px;
+}
+
+/* PARAGRAPH */
+.card3 p{
+    font-size: 18px;
+    color: rgb(231, 228, 228);
+    line-height: 1.6;
+    max-width: 600px; /* chekka tomonga chiqmasligi uchun */
+}
+
+/* BUTTON */
+.learn-btn3 {
+    margin-top: 20px;
+    padding: 12px 32px;
+    background: white;
+    color: #191717;
+    border: none;
+ 
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.learn-btn3:hover {
+    background: rgb(204, 226, 206);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgb(43, 66, 45);
+}
+
+.learn-btn3:active {
+    transform: scale(0.97);
+}
+
+/* RESPONSIVE */
+
+/* Tablet */
+@media (max-width: 900px){
+    .card3{
+        padding: 0 40px;
+        height: auto;
+    }
+
+    .card3 h1{
+        font-size: 32px;
+    }
+
+    .card3 p{
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .learn-btn3{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px){
+    .card3{
+        padding: 20px;
+    }
+
+    .card3 h1{
+        font-size: 28px;
+    }
+
+    .card3 p{
+        font-size: 14px;
+    }
+
+    .learn-btn3{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,199 @@
+.services1 {
+    display: flex;
+    flex-direction: column; /* h1 tepadan cards pastga joylashadi */
+    align-items: center;    /* hamma content gorizontal markazga */
+    padding: 35px 90px;
+   
+    gap: 30px; /* h1 bilan cards orasida bo‘sh joy */
+}
+
+.services1 h1 {
+    text-align: center; /* matn ichida ham markazga */
+    font-size: 40px;
+}
+
+.services1-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 ta ustun */
+    gap: 45px;
+    width: 100%;
+    max-width: 1350px;
+    
+}
+
+.s-card1 {
+    padding: 30px;
+    width: 100%;        /* grid ustuniga moslashadi */
+    max-width: 570px;   /* desktopda eski razmer */
+    height: auto;       /* matnga qarab */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* chapdan boshlansin */
+    gap: 15px;
+    border-radius: 10px;
+
+    /* hover uchun */
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.s-card1:hover {
+    transform: translateY(-10px); /* yuqoriga ko‘tariladi */
+    box-shadow: 0 15px 35px rgba(47, 199, 36, 0.15); /* soya */
+    border-color: transparent; /* xohlasangiz */
+}
+
+/* YASHIL FON */
+.icon-box {
+    width: 70px;
+    height: 70px;
+    background-color: #1ec28b; /* yashil */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* OQ TO‘RTBURCHAK ICHIDAGI ICON */
+.icon-box svg {
+    background-color: rgb(105, 191, 114);
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+}
+
+/* Sarlavha */
+.s-card1 h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Matn */
+.s-card1 p {
+    font-size: 19px;
+    color: #777;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+
+
+
+/* RESPONSIV MEDIA QUERY'LAR */
+
+/* Tablet (768px - 1349px) */
+@media (max-width: 1349px) {
+    .services1 {
+        padding: 25px 60px;
+        gap: 25px;
+    }
+    
+    .services1 h1 {
+        font-size: 35px;
+    }
+    
+    .services1-cards {
+        gap: 35px;
+        max-width: 1000px;
+    }
+    
+    .s-card1 {
+        padding: 25px;
+        max-width: 450px;
+        gap: 12px;
+    }
+    
+    .s-card1 h4 {
+        font-size: 20px;
+    }
+    
+    .s-card1 p {
+        font-size: 17px;
+    }
+    
+    .icon-box {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .icon-box svg {
+        padding: 8px;
+    }
+}
+
+/* Mobile (767px va undan kichik) */
+@media (max-width: 767px) {
+    .services1 {
+        padding: 20px 20px;
+        gap: 20px;
+    }
+    
+    .services1 h1 {
+        font-size: 28px;
+    }
+    
+    .services1-cards {
+        grid-template-columns: 1fr; /* 1 ustunga o'tadi */
+        gap: 25px;
+        max-width: 100%;
+    }
+    
+    .s-card1 {
+        padding: 20px;
+        max-width: none; /* to'liq kenglik */
+        gap: 10px;
+        align-items: center; /* markazga o'tkazish mobil uchun */
+        text-align: center; /* matnni markazga */
+    }
+    
+    .s-card1:hover {
+        transform: none; /* hover o'chiriladi */
+        box-shadow: none;
+    }
+    
+    .s-card1 h4 {
+        font-size: 18px;
+    }
+    
+    .s-card1 p {
+        font-size: 16px;
+    }
+    
+    .icon-box {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .icon-box svg {
+        padding: 6px;
+    }
+}
+
+/* Kichik mobil (480px va undan kichik, ixtiyoriy) */
+@media (max-width: 480px) {
+    .services1 {
+        padding: 15px 15px;
+        gap: 15px;
+    }
+    
+    .services1 h1 {
+        font-size: 24px;
+    }
+    
+    .s-card1 {
+        padding: 8px;
+        gap: 8px;
+        
+    }
+    
+    .s-card1 h4 {
+        font-size: 16px;
+    }
+    
+    .s-card1 p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
